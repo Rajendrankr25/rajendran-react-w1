@@ -23,3 +23,8 @@
   font-style: italic;
   color: red;
 }
+
+button {
+  border: none;
+  background-color: white;
+}

@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Test1 } from './Test1';
 
 //component declaration
 function App() {
@@ -37,19 +38,9 @@ function App() {
       {data.map((a) => (
         <Test1 name={a.name} pic={a.pic} />
       ))}
+
     </div>
   );
 }
-//custom component
-function Test1({ pic, name }) { //we can use object destructring here
-  //const { pic, name } = props; //object destructuring feature in ES6
-  return (  //inside return is a JSX code and it will be converted to javascript by webpack+babel
-    <>
-      <img className="img"
-        src={pic} alt={name} />
-      <h1 className='test'>Hello <span className="nameStyle">{name}</span> ❤😍</h1>
-    </>
-  );
-}
 
-export default App;
+export default App; //default export
