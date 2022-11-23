@@ -17,7 +17,7 @@ export function Counter() {
     return (
         <div>
             {/* conditional rendering */}
-            {(like - disLike) >= 10 ? <h4>🥰🥰🥰🥰🥰</h4> : <h4>😢😢😢😢😢</h4>}
+            {(like - disLike) >= 1 ? <h4>🥰🥰🥰🥰🥰</h4> : <h4>😢😢😢😢😢</h4>}
             <button style={likeStyles} onClick={() => setLike(like + 1)}>
                 👍{like}</button>
             <button style={disLikeStyles} onClick={() => setDisLike(disLike + 1)}>
